@@ -5,10 +5,13 @@
     <meta name ="viewport" content="width=device-width"/>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
+<!-- I provided a fake icon that will need to be developed later on for accessibility purposes. -->
+    <link rel="icon" href="./assets/images/icons8-favicon-50.png">
     <title>Horiseon Main Page</title>
 </head>
 
 <body>
+<!-- nav bar -->
     <div class="header">
         <h1>Hori<span class="seo">seo</span>n</h1>
         <div>
@@ -26,46 +29,61 @@
         </div>
     </div>
     <div class="hero"></div>
+ <!-- I consolidated classes consisting of search-engine-optimization, online-reputation-management, and social-media-marketing into a a single "container" class. I also added a missing div id here.-->
     <div class="content">
+           <!-- Search Engine Optimization section -->
         <div id="search-engine-optimization" class="container">
+               <!-- I created an alt tag here for accessibility. -->
             <img src="./assets/images/search-engine-optimization.jpg" alt= "Notebook with examples of SEO" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </div>
+
+<!-- Online-Reputation-Management section -->
         <div id="online-reputation-management" class="container">
+               <!-- I created an alt tag here for accessibility. -->
             <img src="./assets/images/online-reputation-management.jpg" alt ="Laptop featuring bar graph" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </div>
+
+
+       <!-- Social Media Marketing section -->
         <div id="social-media-marketing" class="container">
-            <img src="./assets/images/social-media-marketing.jpg" alt= "Multiple people gathered around desk" class="float-left" />
+               <!-- I created an alt tag here for accessibility. --> 
+               <img src="./assets/images/social-media-marketing.jpg" alt= "Multiple people gathered around desk" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
         </div>
     </div>
+    <!-- The Benefits section, floating on the right -->
     <div class="benefits">
-        <div class="benefit-lead">
+ <!--  I consolidated classes consisting of benefit-lead, benefit-brand, and benefit-cost into a a single "Icons" class.  -->
+        <div class="Icons">
             <h3>Lead Generation</h3>
+               <!-- I created an alt tag here for accessibility. -->
             <img src="./assets/images/lead-generation.png" alt="Lead Generation" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </div>
-        <div class="benefit-brand">
+        <div class="Icons">
             <h3>Brand Awareness</h3>
+            <!-- I created an alt tag here for accessibility. -->
             <img src="./assets/images/brand-awareness.png" alt="Brand Awareness"/>
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </div>
-        <div class="benefit-cost">
+        <div class="Icons">
             <h3>Cost Management</h3>
+               <!-- I created an alt tag here for accessibility. -->
             <img src="./assets/images/cost-management.png" alt="Cost Management" />
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
@@ -73,7 +91,7 @@
         </div>
     </div>
     <div class="footer">
-       
+       <!-- Copyright Notice -->
      <h2> Made with ❤️️ by Horiseon   </h2>
       <p> &copy; 2023 Horiseon Social Solution Services, Inc.
         </p>

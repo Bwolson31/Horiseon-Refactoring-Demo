@@ -2,6 +2,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* Purely, for the purpose of accessibility, I removed multiple font-families, and am using a single more accessible font-family for everything. If this were a real company, there were no doubt be rules regarding this, as discussed in class. But because this isn't a real company and because the overriding task is to make this website more accessible, I decided to take a chance and do this.    */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -10,7 +12,7 @@ body {
 
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* I changed the background-color to dark blue to better heighten the contrast between it and the content.  */
     background-color: darkblue;
     color: #ffffff;
 }
@@ -20,6 +22,7 @@ body {
     font-size: 48px;
 }
 
+/* This color needed to be changed to heighten the contrast between it and the background. The green SEO, of course, is intended to to highlight that this website is about search engine optimization */
 .header h1 .seo {
     color: #78e40c;
 }
@@ -28,7 +31,6 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
@@ -59,93 +61,21 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background-color: #2589bd; */
-    background-color: darkblue;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-
+/* I created a single container class, because there were multiple classes, consisting of search-engine-optimization, online-reputation-management, and social-media-marketing which could have been consolidated into one.  */
 .container {
 margin-bottom: 20px;
 padding: 50px;
 height: 300px;
-font-family: 'Gill Sans,' 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-/* background-color: #0072bb; */
+ /* I changed the background-color to dark blue to better heighten the contrast between it and the content.  */
 background-color: darkblue;
 color: #ffffff;
 }
-
 
 .container img {
     max-height: 200px;
@@ -155,11 +85,47 @@ color: #ffffff;
     margin-bottom: 20px;
     font-size: 36px;
 }
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+     /* I changed the background-color to dark blue to better heighten the contrast between it and the content.  */
+    background-color: darkblue;
+}
+
+/* I created a single Icons class, because there were multiple classes, consisting of benefit-lead, benefit-brand, and benefit-cost, which could have been consolidated into one.  */
+
+.Icons {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.Icons h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Icons img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
 
 .footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
